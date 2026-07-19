@@ -161,16 +161,16 @@ nav {
     margin-bottom: 50px;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    gap: 20px;
-}
-
 .card {
     background:#fff;
     border-radius:15px;
     overflow:hidden;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .card img {
@@ -203,4 +203,55 @@ nav {
 .card:hover{
     transform:translatey(-8px);
     transition:.3s;
+}
+
+.documentacao {
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;  
+}
+
+.documentacao h2 {
+    font-size: 36px;
+    color: #041228;
+    margin-bottom: 20px;
+}
+
+.documentacao p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cards-documentacao {
+    display: flex;
+    flex-wrap: wrap;          /* Permite que os cards pulem para a linha de baixo */
+    justify-content: center;  /* Centraliza os 2 cards da linha de baixo */
+    gap: 10px;                /* Espaço entre os cards (vertical e horizontal) */
+    width: 100%;
+    max-width: 1800px;        /* Garante que não estique demais em telas grandes */
+    margin: 0 auto;           /* Centraliza a seção na página */
+    padding: 180px;
+    box-sizing: border-box;
+}
+
+.cards-documentacao .card {
+     /* Cálculo mágico: 33.33% (3 colunas) menos o espaçamento */
+    width: calc(33.333% - 14px); 
+    
+    /* Garante que todos os cards tenham a mesma altura, mesmo com textos diferentes */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo do card */
+    background: #ffffff;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Uma leve sombra para destacar */
+    overflow: hidden;
+}
+
+.cards-documentacao img {
+    width: 100%;
+    aspect-ratio: 6 / 5;      /* Altura fixa para todas as imagens */
+    overflow: hidden;     /* Esconde qualquer pedaço que vazar para fora */
 }
