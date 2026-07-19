@@ -208,13 +208,14 @@ nav {
 .documentacao {
     max-width: 1200px;
     margin: 100px auto;
-    text-align: center;  
+    text-align: center;
 }
 
 .documentacao h2 {
     font-size: 36px;
     color: #041228;
     margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 .documentacao p {
@@ -230,15 +231,16 @@ nav {
     justify-content: center;  /* Centraliza os 2 cards da linha de baixo */
     gap: 10px;                /* Espaço entre os cards (vertical e horizontal) */
     width: 100%;
-    max-width: 1800px;        /* Garante que não estique demais em telas grandes */
+    max-width: 1200px;        /* Garante que não estique demais em telas grandes */
     margin: 0 auto;           /* Centraliza a seção na página */
-    padding: 180px;
+    padding: 120px;
     box-sizing: border-box;
+    background: #F7F9FC;        /* Um fundo leve para destacar a seção */
 }
 
 .cards-documentacao .card {
      /* Cálculo mágico: 33.33% (3 colunas) menos o espaçamento */
-    width: calc(33.333% - 14px); 
+    width: calc(50% - 10px); 
     
     /* Garante que todos os cards tenham a mesma altura, mesmo com textos diferentes */
     display: flex;
