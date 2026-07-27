@@ -1,0 +1,455 @@
+/* ========================================
+   ESTILOS PARA ARTIGOS
+   Portal do Viajante
+   ======================================== */
+
+/* ----- HERO DO ARTIGO ----- */
+.hero-artigo {
+    background: linear-gradient(135deg, rgba(26, 42, 58, 0.85), rgba(44, 62, 80, 0.85)),url("../imagem/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px 40px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-artigo .container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Badge de categoria */
+.hero-artigo .categoria-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f1c40f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 16px;
+}
+
+.hero-artigo h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.hero-artigo .meta-info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-artigo .meta-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hero-artigo .meta-info .data {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ----- ÍNDICE DO ARTIGO ----- */
+.indice-artigo {
+    background: #f8f9fa;
+    padding: 30px 20px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.indice-artigo .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.indice-artigo h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6c757d;
+    margin-bottom: 12px;
+}
+
+.indice-artigo ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.indice-artigo ul li {
+    font-size: 0.9rem;
+}
+
+.indice-artigo ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s;
+    border-bottom: 1px dashed transparent;
+}
+
+.indice-artigo ul li a:hover {
+    color: #f1c40f;
+    border-bottom-color: #f1c40f;
+}
+
+/* ----- CONTEÚDO DO ARTIGO ----- */
+.conteudo-artigo {
+    padding: 40px 20px 60px;
+    background: #ffffff;
+}
+
+.conteudo-artigo .container {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.conteudo-artigo p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2d3436;
+    margin-bottom: 24px;
+}
+
+.conteudo-artigo h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a2a3a;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f1c40f;
+}
+
+.conteudo-artigo h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a2a3a;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.conteudo-artigo ul,
+.conteudo-artigo ol {
+    margin-bottom: 24px;
+    padding-left: 24px;
+}
+
+.conteudo-artigo ul li,
+.conteudo-artigo ol li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2d3436;
+    margin-bottom: 8px;
+}
+
+.conteudo-artigo .imagem-artigo {
+    margin: 32px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.conteudo-artigo .imagem-artigo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.conteudo-artigo .legenda {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: center;
+    padding: 8px 0 0;
+    font-style: italic;
+}
+
+/* ----- TABELA ----- */
+.tabela-valores {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.tabela-valores thead {
+    background: #1a2a3a;
+    color: #fff;
+}
+
+.tabela-valores th,
+.tabela-valores td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.tabela-valores tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.tabela-valores tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ----- CAIXA DE DESTAQUE ----- */
+.caixa-destaque {
+    padding: 20px;
+}
+
+.caixa-destaque .container {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.caixa-destaque .destaque-conteudo {
+    background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);
+    border-left: 5px solid #0dcaf0;
+    padding: 28px 32px;
+    border-radius: 12px;
+    color: #055160;
+}
+
+.caixa-destaque .destaque-conteudo strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #0a3b44;
+}
+
+.caixa-destaque .destaque-conteudo p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ----- FAQ ----- */
+.faq {
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.faq .container {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a2a3a;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.faq-item {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e9ecef;
+    overflow: hidden;
+}
+
+.faq-pergunta {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 18px 24px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a2a3a;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.faq-pergunta:hover {
+    background: #f8f9fa;
+}
+
+.faq-pergunta .icone {
+    font-size: 1.4rem;
+    color: #f1c40f;
+    transition: transform 0.3s;
+}
+
+.faq-pergunta.ativo .icone {
+    transform: rotate(45deg);
+}
+
+.faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 24px;
+}
+
+.faq-resposta.ativo {
+    max-height: 300px;
+    padding: 0 24px 20px;
+}
+
+.faq-resposta p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #2d3436;
+    margin: 0;
+}
+
+/* ----- VEJA TAMBÉM ----- */
+.veja-tambem {
+    padding: 40px 20px 60px;
+    background: #ffffff;
+}
+
+.veja-tambem .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.veja-tambem h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a2a3a;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.veja-tambem .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.veja-tambem .card-link {
+    display: block;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #1a2a3a;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.veja-tambem .card-link:hover {
+    background: #f1c40f;
+    color: #1a2a3a;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(241, 196, 15, 0.3);
+}
+
+.veja-tambem .card-link .emoji {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .hero-artigo {
+        padding: 40px 16px 30px;
+        min-height: 220px;
+    }
+
+    .hero-artigo h1 {
+        font-size: 2rem;
+    }
+
+    .hero-artigo .meta-info {
+        gap: 12px;
+        font-size: 0.8rem;
+    }
+
+    .indice-artigo ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .conteudo-artigo {
+        padding: 24px 16px 40px;
+    }
+
+    .conteudo-artigo p {
+        font-size: 1rem;
+    }
+
+    .conteudo-artigo h2 {
+        font-size: 1.5rem;
+    }
+
+    .conteudo-artigo h3 {
+        font-size: 1.15rem;
+    }
+
+    .tabela-valores {
+        font-size: 0.85rem;
+    }
+
+    .tabela-valores th,
+    .tabela-valores td {
+        padding: 10px 12px;
+    }
+
+    .caixa-destaque .destaque-conteudo {
+        padding: 20px;
+    }
+
+    .faq-pergunta {
+        font-size: 0.95rem;
+        padding: 14px 18px;
+    }
+
+    .veja-tambem .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-artigo h1 {
+        font-size: 1.6rem;
+    }
+
+    .veja-tambem .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .veja-tambem .card-link {
+        padding: 14px 12px;
+        font-size: 0.9rem;
+    }
+}

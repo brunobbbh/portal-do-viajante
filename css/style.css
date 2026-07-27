@@ -96,7 +96,7 @@ nav {
 }
 
 .hero {
-    background-image: url("imagem/hero.jpeg");
+    background-image: url("../imagem/hero.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ nav {
     align-items: center;
     background:
     linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("imagem/hero.jpeg");
+    url("../imagem/hero.jpeg");
     background-size: cover;
     background-position: center;
     
