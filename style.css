@@ -25,8 +25,7 @@ nav {
     width: 400px;
     height: auto;
     padding: 10px;
-    margin-left: 0px;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .logo:hover{
@@ -246,7 +245,7 @@ nav {
     gap:30px;
 }
 
-.cards-documentacao .card{
+.cards-documentacao .card-destino{
     background:#fff;
     border-radius:15px;
     overflow:hidden;
@@ -254,7 +253,7 @@ nav {
     transition:.3s;
 }
 
-.cards-documentacao .card:hover{
+.cards-documentacao .card-destino:hover{
     transform:translateY(-8px);
 }
 
@@ -301,14 +300,25 @@ nav {
     margin-bottom:25px;
 }
 
-.card-baixo:first-of-type{
-    grid-column:1 / 2;
+.card-baixo:nth-child(4){
+    grid-column:1;
     justify-self:end;
 }
 
-.card-baixo:last-of-type{
-    grid-column:3 / 4;
+.card-baixo:nth-child(5){
+    grid-column:3;
     justify-self:start;
+}
+
+.cards-documentacao-baixo{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.cards-documentacao-baixo .card-destino{
+    width:350px;
 }
 
 .ver-todos{
@@ -325,12 +335,15 @@ nav {
     border-radius:8px;
     font-size:22px;
     font-weight:600;
-    transition:.3s;
+    transition:background .3s, transform .3s;
+    margin-top: 60px;
+    cursor:pointer;
 }
 
 .botao-guias:hover{
     background:#D4AF37;
     color:#041228;
+    transform:translateY(-3px);
 }
 
 .artigo{
