@@ -477,3 +477,504 @@ nav {
     color:#bbb;
 }
 
+/* ========================================
+   PÁGINAS GERAIS
+   ======================================== */
+
+.pagina-hero {
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+    color: #fff;
+    padding: 60px 20px 40px;
+    text-align: center;
+}
+
+.pagina-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.pagina-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pagina-texto {
+    padding: 60px 20px;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.pagina-texto h2 {
+    font-size: 1.6rem;
+    color: #1a2a3a;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f1c40f;
+}
+
+.pagina-texto p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+/* ========================================
+   DESTINOS
+   ======================================== */
+
+.lista-destinos {
+    padding: 60px 20px;
+}
+
+.grid-destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-destino {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-destino:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-destino-imagem {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.badge-destino {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-destino-conteudo {
+    padding: 24px;
+}
+
+.card-destino-conteudo h3 {
+    font-size: 1.3rem;
+    color: #1a2a3a;
+    margin-bottom: 10px;
+}
+
+.card-destino-conteudo p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.btn-destino {
+    display: inline-block;
+    color: #f1c40f;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn-destino:hover {
+    color: #1a2a3a;
+}
+
+/* ========================================
+   GUIAS
+   ======================================== */
+
+.lista-guias {
+    padding: 60px 20px;
+}
+
+.grid-guias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-guia {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.card-guia:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.icon-guia {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.card-guia h3 {
+    font-size: 1.2rem;
+    color: #1a2a3a;
+    margin-bottom: 10px;
+}
+
+.card-guia p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.btn-guia {
+    display: inline-block;
+    color: #f1c40f;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn-guia:hover {
+    color: #1a2a3a;
+}
+
+/* ========================================
+   ARTIGOS (lista)
+   ======================================== */
+
+.lista-artigos {
+    padding: 60px 20px;
+}
+
+.grid-artigos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-artigo {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.card-artigo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-artigo-imagem {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-artigo-conteudo {
+    padding: 24px;
+}
+
+.categoria-artigo {
+    display: inline-block;
+    background: #f1c40f20;
+    color: #f1c40f;
+    padding: 2px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.card-artigo-conteudo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-artigo-conteudo h3 a {
+    color: #1a2a3a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.card-artigo-conteudo h3 a:hover {
+    color: #f1c40f;
+}
+
+.card-artigo-conteudo p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.meta-artigo {
+    display: flex;
+    gap: 16px;
+    font-size: 0.8rem;
+    color: #adb5bd;
+}
+
+/* ========================================
+   SOBRE
+   ======================================== */
+
+.sobre-conteudo {
+    padding: 60px 20px;
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-texto h2 {
+    font-size: 1.6rem;
+    color: #1a2a3a;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.sobre-texto h2:first-child {
+    margin-top: 0;
+}
+
+.sobre-texto p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2d3436;
+    margin-bottom: 16px;
+}
+
+.sobre-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-texto ul li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2d3436;
+    padding: 8px 0;
+    padding-left: 28px;
+    position: relative;
+}
+
+.sobre-texto ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #f1c40f;
+    font-weight: 700;
+}
+
+.sobre-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   CONTATO
+   ======================================== */
+
+.contato-conteudo {
+    padding: 60px 20px;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contato-formulario h2 {
+    font-size: 1.6rem;
+    color: #1a2a3a;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #1a2a3a;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f1c40f;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    background: #f1c40f;
+    color: #1a2a3a;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background: #d4ac0d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(241, 196, 15, 0.4);
+}
+
+.contato-info {
+    background: #f8f9fa;
+    padding: 32px 28px;
+    border-radius: 16px;
+}
+
+.contato-info h2 {
+    font-size: 1.4rem;
+    color: #1a2a3a;
+    margin-bottom: 20px;
+}
+
+.contato-info p {
+    font-size: 1rem;
+    color: #2d3436;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.contato-redes {
+    margin-top: 20px;
+}
+
+.contato-redes a {
+    display: block;
+    color: #1a2a3a;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s;
+}
+
+.contato-redes a:hover {
+    color: #f1c40f;
+}
+
+.contato-redes a i {
+    width: 24px;
+    margin-right: 8px;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 992px) {
+    .sobre-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-imagem {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina-hero h1 {
+        font-size: 2rem;
+    }
+
+    .pagina-hero p {
+        font-size: 1rem;
+    }
+
+    .grid-destinos,
+    .grid-guias,
+    .grid-artigos {
+        grid-template-columns: 1fr;
+    }
+
+    .card-artigo-imagem {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina-hero {
+        padding: 40px 16px 30px;
+    }
+
+    .pagina-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .contato-info {
+        padding: 24px 18px;
+    }
+}
