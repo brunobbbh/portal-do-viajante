@@ -217,36 +217,9 @@
 
         </section>
 
-        <div class="artigo-destaque">
-
-    <div class="artigo-imagem">
-
-        <img src="imagem/passaporte.jpg"
-             alt="Passaporte brasileiro">
-
-    </div>
-
-       <div class="artigo-texto">
-
-          <span class="categoria">
-             ARTIGO EM DESTAQUE
-          </span>
-
-          <h2>
-            Como tirar o passaporte brasileiro em 2026
-          </h2>
-
-          <p>
-            Descubra todos os documentos necessários,
-            quanto custa, onde solicitar
-            e quanto tempo leva para emitir o passaporte.
-          </p>
-
-          <a href="artigos/passaporte.html" class="botao">
-            Ler artigo completo →
-          </a>
-
-       </div>
+        <div class="artigo-destaque" id="destaque-container">
+            <!-- O JavaScript vai preencher automaticamente aqui -->
+        </div>
 
     </div>
         
@@ -311,6 +284,105 @@
     </div>
 
 </footer>
+
+        <!-- ===== JAVASCRIPT: ARTIGO EM DESTAQUE ===== -->
+<script>
+    // ========================================
+    // ARTIGO EM DESTAQUE - ROTAÇÃO AUTOMÁTICA
+    // ========================================
+
+    const artigosDestaque = [
+        {
+            titulo: "Como tirar o passaporte brasileiro em 2026",
+            descricao: "Descubra todos os documentos necessários, quanto custa, onde solicitar e quanto tempo leva para emitir o passaporte.",
+            link: "artigos/passaporte.html",
+            imagem: "imagem/passaporte.jpg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+            titulo: "Como tirar o visto americano em 2026",
+            descricao: "Tipos de visto, documentos, entrevista, valores e dicas para aprovação no visto dos Estados Unidos.",
+            link: "artigos/visto-americano.html",
+            imagem: "imagem/visto-americano-documentos.jpg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+            titulo: "Seguro Viagem 2026: guia completo",
+            descricao: "O que cobre, tipos, melhores seguradoras, valores e exigências por destino.",
+            link: "artigos/seguro-viagem.html",
+            imagem: "imagem/seguro-viagem.jpg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+            titulo: "eSIM 2026: guia completo para viajantes",
+            descricao: "O que é, como funciona, dispositivos compatíveis, provedores e preços.",
+            link: "artigos/esim.html",
+            imagem: "imagem/esim.jpg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+            titulo: "Câmbio 2026: guia completo para viajantes",
+            descricao: "Como levar dinheiro, cartões pré-pagos, taxas, IOF e dicas de economia.",
+            link: "artigos/cambio.html",
+            imagem: "imagem/cambio-moedas.jpg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+            titulo: "Vacinas 2026: guia completo para viajantes",
+            descricao: "Vacinas obrigatórias, carteirinha internacional, onde tomar e dicas de saúde.",
+            link: "artigos/vacinas.html",
+            imagem: "imagem/vacinas.jpg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+            titulo: "Nova York 2026: guia completo",
+            descricao: "Melhor época, atrações, onde ficar, transporte, gastronomia e dicas de economia.",
+            link: "artigos/nova-york.html",
+            imagem: "imagem/novayork.jpeg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+            titulo: "Visto Schengen 2026: guia completo para viajar para a Europa",
+            descricao: "Guia completo sobre o visto Schengen: documentos, valores, passo a passo e dicas para aprovação.",
+            link: "artigos/visto-schengen.html",
+            imagem: "imagem/visto-schengen-documentos.jpg",
+            categoria: "ARTIGO EM DESTAQUE"
+        },
+        {
+    titulo: "Renovação de Passaporte 2026: guia completo",
+    descricao: "Passo a passo para renovar seu passaporte: documentos, valores, prazos e dicas para agilizar o processo.",
+    link: "artigos/renovacao-passaporte.html",
+    imagem: "imagem/renovacao-passaporte-destaque.jpg",
+    categoria: "ARTIGO EM DESTAQUE"
+}
+    ];
+
+    function getArtigoAleatorio() {
+        const indice = Math.floor(Math.random() * artigosDestaque.length);
+        return artigosDestaque[indice];
+    }
+
+    function exibirDestaque() {
+        const container = document.getElementById('destaque-container');
+        if (!container) return;
+
+        const artigo = getArtigoAleatorio();
+
+        container.innerHTML = `
+            <div class="artigo-imagem">
+                <img src="${artigo.imagem}" alt="${artigo.titulo}">
+            </div>
+            <div class="artigo-texto">
+                <span class="categoria">${artigo.categoria}</span>
+                <h2>${artigo.titulo}</h2>
+                <p>${artigo.descricao}</p>
+                <a href="${artigo.link}" class="botao">Ler artigo completo →</a>
+            </div>
+        `;
+    }
+
+    document.addEventListener('DOMContentLoaded', exibirDestaque);
+</script>
 
 </body>
 </html> 
